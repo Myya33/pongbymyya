@@ -1,0 +1,84 @@
+raining = True
+if (raining) :
+        print("bring an umbrella")
+else:
+    print("Leave the umbrella")
+
+#integers
+my_int = 23
+#floats
+my_float = 3.14
+print (f'{my_float}%')
+
+# Tuples
+my_tuple = (1, 2, 3, 4, 5)
+
+#Range(Start, Stop, Step)
+my_list = []
+for i in range(20):
+    my_list.append(i)
+print(my_list)
+my_list_two = [i + 20 for i in range(0, 200, 10)]
+my_list_two [0] = 10
+
+#Sets
+#Unique Numbers, Unordered
+my_garage = { "Ford Focus", "Honda Civic", }
+mixed_set = {"apple, 5, True"}
+my_garage.remove("")
+
+#Dictionaries
+#Key Value Pairs
+employee = {
+    'name' : 'Joe',
+    'age' : 23
+}
+
+#Nested Dictionaries
+my_family = {
+    'dog' : {
+        'name': 'Gus',
+        'age': '8months',
+    },
+    'dog2': {
+        'name': 'sadie',
+        'age': '1year',
+    }
+}
+
+#Booleans
+#True of False
+#Result of Comparison
+print(9 > 4)
+
+#null type in python is none
+# is no the same as false
+#None is a value that represents nothing
+#None initializes a NoneType object
+#False is a value that represents False
+#Some other libraries implement their own null type
+
+#Casting Data types
+#int() creates an int from a float (by truncating) or a string
+x = int(1) # x will be one
+y = int(2.8) #y == 2
+z = float("4")
+
+#while <condition>:
+    #loop action will continue until the condition is false
+
+torque = 5
+while torque > 0:
+    torque -= 3
+    #while loop will continue twice bc 5 - 3 once will result in 2 then 2 -3
+    #will terminate the while loop bc it will become less than 0.
+
+#Class Example
+class Robot:
+    def introduce_self():
+        print( "My name is" + self.name)
+r1 = Robot()
+r1.name = "Tom"
+r1.color = "red"
+r1.weight = 30
+
